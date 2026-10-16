@@ -5,7 +5,7 @@
    Cada material:
      titulo      Nome do material no card
      resumo      Uma ou duas frases sobre o conteúdo
-     categoria   planejamento | conteudos | reports | analises
+     categoria   planejamento | trimestral | reports | analises
      arquivo     Caminho do HTML (ex.: 'materiais/report-agosto-2026.html')
                  ou link externo completo (https://...), que abre em nova aba
      data        AAAA-MM-DD (ordena do mais recente para o mais antigo)
@@ -21,15 +21,15 @@ window.CATEGORIAS = [
     icone: 'M23 6l-9.5 9.5-5-5L1 18M17 6h6v6'
   },
   {
-    id: 'conteudos',
-    nome: 'Conteúdos',
-    descricao: 'Textos dos anúncios e materiais das campanhas.',
-    icone: 'M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zM8.5 10a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM21 15l-5-5L5 21'
+    id: 'trimestral',
+    nome: 'Reports Trimestral',
+    descricao: 'Balanço de cada trimestre: evolução, campanhas e prioridades.',
+    icone: 'M3 4h18v18H3zM16 2v4M8 2v4M3 10h18M8 14h3M8 18h8'
   },
   {
     id: 'reports',
-    nome: 'Reports',
-    descricao: 'Atualizações da conta e o andamento das entregas.',
+    nome: 'Report Mensal',
+    descricao: 'O mês a mês da conta, as atualizações e o andamento das entregas.',
     icone: 'M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8zM14 2v6h6M16 13H8M16 17H8M10 9H8'
   },
   {
@@ -70,14 +70,11 @@ window.MATERIAIS = [
     detalhes: ['Interativo']
   },
 
-  /* ---------- Conteúdos ---------- */
-  // (nenhum material publicado ainda)
-
   /* ---------- Reports (mensais e trimestrais) ---------- */
   {
     titulo: 'Report Trimestral · 3º trimestre 2026',
     resumo: 'Julho a setembro: o primeiro trimestre inteiro com a estrutura nova e a comparação com o mesmo período de 2025.',
-    categoria: 'reports',
+    categoria: 'trimestral',
     arquivo: 'materiais/report-trimestral-t3-2026.html',
     data: '2026-10-01',
     dataTexto: '3º trimestre 2026',
@@ -86,7 +83,7 @@ window.MATERIAIS = [
   {
     titulo: 'Report Trimestral · 2º trimestre 2026',
     resumo: 'Abril a junho: nove campanhas novas, mais visitas e cada visita mais barata.',
-    categoria: 'reports',
+    categoria: 'trimestral',
     arquivo: 'materiais/report-trimestral-t2-2026.html',
     data: '2026-07-01',
     dataTexto: '2º trimestre 2026',
@@ -95,7 +92,7 @@ window.MATERIAIS = [
   {
     titulo: 'Report Trimestral · 1º trimestre 2026',
     resumo: 'Janeiro a março: a virada de gestão e o salto de qualidade do clique em março.',
-    categoria: 'reports',
+    categoria: 'trimestral',
     arquivo: 'materiais/report-trimestral-t1-2026.html',
     data: '2026-04-01',
     dataTexto: '1º trimestre 2026',

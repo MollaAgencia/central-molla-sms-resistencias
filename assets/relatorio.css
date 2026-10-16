@@ -254,3 +254,13 @@ tr.tot td{background:var(--paper-2);font-weight:800}
   .chart-card{page-break-inside:avoid;break-inside:avoid}
   .nav-rel{display:none}
 }
+
+/* Leitura da Molla (insight dinâmico) */
+.insight{margin:14px 0 4px;background:linear-gradient(135deg,var(--orange-soft),#FFF8F3);border:1px solid var(--orange-line);border-left:4px solid var(--orange);border-radius:0 var(--radius-sm) var(--radius-sm) 0;padding:16px 20px}
+.ins-cab{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:1.1px;text-transform:uppercase;color:var(--orange-deep);font-weight:800;margin-bottom:6px}
+.ins-ic{font-size:13px}
+.ins-rec{margin-left:auto;color:var(--muted);font-weight:700;letter-spacing:.6px;text-transform:none;font-family:'Inter',sans-serif;font-size:11.5px}
+.insight p{font-size:14.5px;color:#3a4048;line-height:1.6}
+.insight p b{color:var(--ink)}
+@media(max-width:560px){.ins-rec{margin-left:0;width:100%}}
+@media print{.insight{break-inside:avoid}}

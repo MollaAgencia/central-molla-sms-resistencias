@@ -1,6 +1,6 @@
 # SMS Resistências · Central do Cliente (Molla)
 
-Portal estático com tela de acesso e a Central do Cliente, onde ficam todos os materiais em HTML do atendimento, organizados em quatro categorias: **Planejamento**, **Conteúdos**, **Reports** e **Análises e estudos**.
+Portal estático com tela de acesso e a Central do Cliente, onde ficam todos os materiais em HTML do atendimento, organizados em quatro categorias: **Planejamento**, **Reports Trimestral**, **Report Mensal** e **Análises e estudos**.
 
 Endereço: https://central-molla-sms-resistencias.vercel.app/
 
@@ -9,12 +9,12 @@ Endereço: https://central-molla-sms-resistencias.vercel.app/
 - `central.html` — página inicial da Central, com as categorias, os materiais e o contato da Molla.
 - `materiais/` — um arquivo HTML por material. Só abrem após o login.
   - `pauta-reuniao-alinhamento-julho-2026.html` — Pauta da reunião de alinhamento de julho (Planejamento)
-  - `otimizacoes-demandas-status-28-07-2026.html` — Otimizações e Demandas · Status (Reports)
-  - `atualizacao-conta-julho-2026.html` — Atualização da Conta · Julho 2026 (Reports)
-  - `atualizacao-conta-junho-2026.html` — Atualização da Conta · Junho 2026 (Reports)
+  - `otimizacoes-demandas-status-28-07-2026.html` — Otimizações e Demandas · Status (Report Mensal)
+  - `atualizacao-conta-julho-2026.html` — Atualização da Conta · Julho 2026 (Report Mensal)
+  - `atualizacao-conta-junho-2026.html` — Atualização da Conta · Junho 2026 (Report Mensal)
   - `performance-google-ads-jan-jul-2026.html` — Performance do Semestre · Jan a Jul 2026 (Análises e estudos)
-  - `report-mensal-<mês>-2026.html` — Reports mensais de janeiro a outubro de 2026 (outubro parcial até 14/10) (Reports)
-  - `report-trimestral-t1|t2|t3-2026.html` — Reports trimestrais de jan–mar, abr–jun e jul–set de 2026 (Reports)
+  - `report-mensal-<mês>-2026.html` — Reports mensais de janeiro a outubro de 2026 (outubro parcial até 14/10) (Report Mensal)
+  - `report-trimestral-t1|t2|t3-2026.html` — Reports trimestrais de jan–mar, abr–jun e jul–set de 2026 (Reports Trimestral)
   - As duas planilhas de Planejamento são links do Google Sheets e abrem em nova aba.
 - `assets/materiais.js` — **lista de materiais exibidos na Central** (é o único arquivo a editar para publicar um material novo).
 - `assets/guarda.js` — acesso restrito e barra "‹ Central · Exportar PDF · Sair" dentro dos materiais.
@@ -31,7 +31,7 @@ Endereço: https://central-molla-sms-resistencias.vercel.app/
 1. Salve o HTML dentro de `materiais/` (ex.: `materiais/report-outubro-2026.html`).
 2. No HTML, logo depois de `<meta charset="UTF-8">`, cole:
    `<script src="../assets/guarda.js"></script>`
-3. Em `assets/materiais.js`, acrescente um bloco em `MATERIAIS` com título, resumo, categoria (`planejamento`, `conteudos`, `reports` ou `analises`), arquivo e data.
+3. Em `assets/materiais.js`, acrescente um bloco em `MATERIAIS` com título, resumo, categoria (`planejamento`, `trimestral` para Reports Trimestral, `reports` para Report Mensal, ou `analises`), arquivo e data.
 4. Envie os dois arquivos ao GitHub.
 
 ## Acesso
